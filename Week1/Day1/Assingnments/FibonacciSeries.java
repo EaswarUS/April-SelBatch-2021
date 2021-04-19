@@ -1,0 +1,20 @@
+package week1.day1;
+
+public class FibonacciSeries {
+
+	public static void main(String[] args) {
+
+		int fm = 0;
+		int sm = 1;
+
+		for (int i = 1; i <= 10; i++) {
+			System.out.print(fm + " ");
+			int sum = fm + sm;
+			fm = sm;
+			sm = sum;
+
+		}
+
+	}
+
+}
