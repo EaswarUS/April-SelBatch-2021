@@ -1,27 +1,19 @@
 package week1.day2;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
 
 public class CharacterOccurance {
 
 	public static void main(String[] args) {
-		String str = "welcome to Selenium automation";
-		char[] charArray = str.toCharArray();
-		
-		 Map<Character,Integer> map = new LinkedHashMap<Character,Integer>();
-		 
-		 for (char ch : charArray) {
-			 if (map.containsKey(ch)) {
-				 map.put(ch, map.get(ch)+1);
-				
+		String company="testleaf";
+		char c='t';
+		int count =0;
+		char[] charArray = company.toCharArray();
+		for (int i = 0; i < charArray.length; i++) {
+			if(charArray[i]==c) {
+				count++;
 			}
-			 else {
-				 map.put(ch, 1);
-			}
-			 
+			
 		}
-		 System.out.println(map);
+		System.out.println(count);
 	}
-
-}
+	}
